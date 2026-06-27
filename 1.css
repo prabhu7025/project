@@ -1,0 +1,68 @@
+.carousel {
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.6s ease;
+  }
+  
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  video, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Hide radio buttons */
+  input {
+    display: none;
+  }
+  
+  /* Slide controls */
+  #slide1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+  
+  /* Navigation dots */
+  .nav {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  #slide1:checked ~ .nav label:nth-child(1),
+  #slide2:checked ~ .nav label:nth-child(2),
+  #slide3:checked ~ .nav label:nth-child(3) {
+    opacity: 1;
+  }

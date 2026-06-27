@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos One by One</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    video {
+      width: 80%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video 1 -->
+  <video autoplay muted loop controls>
+    <source src="1.mp4" type="video/mp4">
+  </video>
+
+  <!-- Video 2 -->
+  <video autoplay muted loop controls>
+    <source src="2.mp4" type="video/mp4">
+  </video>
+
+  <!-- Video 3 -->
+  <video autoplay muted loop controls>
+    <source src="3.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>

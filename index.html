@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+
+  <link rel="stylesheet" href="project.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">atoms</h1>
+
+      <nav>
+        <ul>
+          <li><a href="project.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="video.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hearing is<br>
+
+        Believing</h2>
+    
+
+      <a href="products.html" class="product-btn">Shop Now</a>
+    </div>
+  </section>
+  <table>
+    <tr>
+        
+        <td>
+            <p>
+                Nature provides fresh air, clean water, and beautiful scenery.
+                Spending time in nature helps reduce stress and improves health.
+            </p>
+            <a href="https://www.flipkart.com/search?q=headphones&utm_source=chatgpt.com" target="_blank" class=".btn">
+              shop now
+            </a>
+        </td>
+
+        
+        <td>
+            <img src="11.webp" alt="Nature Image">
+        </td>
+    </tr>
+</table>
+  
+  <section class="products" id="products">
+
+    <h2 class="section-title">Featured Products</h2>
+
+    <div class="product-grid">
+
+      
+      <div class="product-card">
+        <img src="24.webp" alt="Phone">
+
+        <h3>boAt Rockerz 551</h3>
+
+        <p>$2799</p>
+        <a href="https://www.flipkart.com/boat-rockerz-551-anc-hybrid-anc-100-hrs-playback-40mm-drivers-asap-charge-bluetooth/p/itmbd436ac6c4964?pid=ACCGZYG5EDAVXZQ8&lid=LSTACCGZYG5EDAVXZQ87AIHJK&marketplace=FLIPKART&q=boAt+Rockerz+551&store=0pm%2Ffcn%2Fgc3&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=8dfca3da-5182-4974-b9fc-c75478a3087f.ACCGZYG5EDAVXZQ8.SEARCH&ppt=None&ppn=None&ssid=cuggxi2euo0000001780121600441&qH=fa9327ad92ef9bf5&ov_redirect=true&ov_redirect=true" target="_blank" class="product-btn">
+          Buy Now
+        </a>
+      </div>
+
+     
+      <div class="product-card">
+        <img src="18.webp" alt="Laptop">
+
+        <h3>Sony WH-CH520</h3>
+
+        <p>$4390</p>
+
+        <a href="https://www.flipkart.com/sony-wh-ch520-lz-bluetooth/p/itmf3323e4dd1211?pid=ACCGZ4MAJXCC8ED8&lid=LSTACCGZ4MAJXCC8ED8QJ9YST&marketplace=FLIPKART&q=Sony+WH-CH520&store=0pm%2Ffcn%2Fgc3&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=774eba18-6970-48a0-975e-15700da7c4bc.ACCGZ4MAJXCC8ED8.SEARCH&ppt=sp&ppn=sp&ssid=bmqc367uow0000001780121659101&qH=e63062c025489ac7&ov_redirect=true&ov_redirect=true" target="_blank" class="product-btn">
+          Buy Now
+        </a>
+      </div>
+
+    
+      <div class="product-card">
+        <img src="12.webp" alt="Headphones">
+
+        <h3>Noise Airwave Max 4</h3>
+
+        <p>$2499</p>
+
+        <a href="https://www.flipkart.com/noise-airwave-max-4-70-hours-playtime-enc-wiith-dual-pairing-ultra-low-latency-bluetooth/p/itmf61f598df5a86?pid=ACCGZKS7HDRBC2VM&lid=LSTACCGZKS7HDRBC2VMNPP4HH&marketplace=FLIPKART&q=Noise+Airwave+Max+4&store=0pm%2Ffcn&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=673edb38-8f7a-4bfb-ba08-ae1e1514682a.ACCGZKS7HDRBC2VM.SEARCH&ppt=sp&ppn=sp&ssid=a5fx2aqlvk0000001780121714567&qH=6329fb86cc3a03c2&ov_redirect=true&ov_redirect=true" target="_blank" class="product-btn">
+          Buy Now
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    
+    .slider{
+      width:1350px;
+      height:800px;
+      margin:10px auto;
+      overflow:hidden;
+      position:relative;
+    }
+    
+    .slides{
+      display:flex;
+      transition:0s;
+    }
+    
+    video{
+      width:1350px;
+      height:800px;
+      object-fit:cover;
+    }
+    
+    button{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      padding:10px;
+      border:none;
+      background:#000;
+      color:#fff;
+      cursor:pointer;
+    }
+    
+    .prev{left:10px}
+    .next{right:10px}
+    </style>
+    </head>
+    <body>
+    
+    <div class="slider">
+      <div class="slides" id="slides">
+    
+        <video muted autoplay>
+          <source src="1.mp4" type="video/mp4">
+        </video>
+    
+        <video muted>
+          <source src="2.mp4" type="video/mp4">
+        </video>
+    
+        <video muted>
+          <source src="3.mp4" type="video/mp4">
+        </video>
+    
+      </div>
+    
+      <button class="prev" onclick="move(-1)">❮</button>
+      <button class="next" onclick="move(1)">❯</button>
+    </div>
+    <script>
+      let index=0;
+      const slides=document.getElementById("slides");
+      const videos=document.querySelectorAll("video");
+      
+      function showSlide(i){
+        if(i<0) index=2;
+        else if(i>2) index=0;
+        else index=i;
+      
+        slides.style.transform=`translateX(-${index*1350}px)`;
+      
+        videos.forEach(v=>{
+          v.pause();
+          v.currentTime=0;
+        });
+      
+        videos[index].play();
+      }
+      
+      function move(step){
+        showSlide(index+step);
+      }
+      
+      videos.forEach((video,i)=>{
+        video.onended=()=>showSlide(i+1);
+      });
+      </script>
+  
+    
+  <section class="gallery">
+
+    <h2 class="section-title">Image Gallery</h2>
+
+    <div class="gallery-grid">
+
+      <img src="1.webp" alt="Gallery">
+
+      <img src="2.webp" alt="Gallery">
+
+      <img src="3.webp" alt="Gallery">
+
+      <img src="4.webp" alt="Gallery">
+
+    </div>
+  </section>
+
+
+</body>
+</html>
